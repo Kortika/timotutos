@@ -1,26 +1,119 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Timo_leert" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kan Timo meer dan 10 tellen? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ll-RS-bDv">
+                                <rect key="frame" x="45" y="120" width="230" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIM-PG-f9l">
+                                <rect key="frame" x="149.5" y="273.5" width="21" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbU-Kv-O0V">
+                                <rect key="frame" x="144.5" y="207.5" width="30" height="30"/>
+                                <state key="normal" title="⬆️"/>
+                                <connections>
+                                    <action selector="up:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RXG-yq-czO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovs-GJ-ngg">
+                                <rect key="frame" x="145.5" y="321.5" width="30" height="30"/>
+                                <state key="normal" title="⬇️"/>
+                                <connections>
+                                    <action selector="down:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W7C-Ql-3Ke"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCB-W9-gvy">
+                                <rect key="frame" x="69" y="376" width="183" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.21437849605968873" green="0.27246128353496757" blue="0.75293474740932642" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Teach Timo to count till:">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUP-ib-Cbs">
+                                <rect key="frame" x="134.5" y="465" width="51" height="38"/>
+                                <color key="backgroundColor" red="0.52261220390724683" green="0.47197716094043229" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="Leer">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="teachTimo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Shf-3M-Gcy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Timo kan nu tot 10 tellen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oA4-W5-kSU">
+                                <rect key="frame" x="45" y="507" width="230" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1d8-sJ-eU0">
+                                <rect key="frame" x="129" y="427" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="9C4-4P-ylR"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ovs-GJ-ngg" firstAttribute="centerX" secondItem="VIM-PG-f9l" secondAttribute="centerX" id="1hY-kU-Ew0"/>
+                            <constraint firstItem="mCB-W9-gvy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="34a-8S-bGi"/>
+                            <constraint firstItem="5ll-RS-bDv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="37u-zv-a7d"/>
+                            <constraint firstItem="UbU-Kv-O0V" firstAttribute="centerX" secondItem="VIM-PG-f9l" secondAttribute="centerX" id="7j3-m6-j9K"/>
+                            <constraint firstItem="zUP-ib-Cbs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JFf-RR-dMm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oA4-W5-kSU" secondAttribute="bottom" constant="40" id="M8o-kY-gmj"/>
+                            <constraint firstItem="VIM-PG-f9l" firstAttribute="top" secondItem="UbU-Kv-O0V" secondAttribute="bottom" constant="36" id="TvM-Gp-uC0"/>
+                            <constraint firstItem="VIM-PG-f9l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XAv-JQ-cM7"/>
+                            <constraint firstItem="1d8-sJ-eU0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XXN-id-agg"/>
+                            <constraint firstItem="VIM-PG-f9l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yz7-zO-uYj"/>
+                            <constraint firstItem="5ll-RS-bDv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="g4y-yO-guG"/>
+                            <constraint firstItem="oA4-W5-kSU" firstAttribute="top" secondItem="zUP-ib-Cbs" secondAttribute="bottom" constant="8" id="iFQ-RY-oss"/>
+                            <constraint firstItem="ovs-GJ-ngg" firstAttribute="top" secondItem="VIM-PG-f9l" secondAttribute="bottom" constant="27" id="iJg-3O-WPc"/>
+                            <constraint firstItem="1d8-sJ-eU0" firstAttribute="top" secondItem="mCB-W9-gvy" secondAttribute="bottom" constant="21" id="l7m-Dt-zhW"/>
+                            <constraint firstItem="zUP-ib-Cbs" firstAttribute="top" secondItem="1d8-sJ-eU0" secondAttribute="bottom" constant="8" id="qj5-8f-lhz"/>
+                            <constraint firstItem="oA4-W5-kSU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sxI-hu-ZBS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countLabel" destination="VIM-PG-f9l" id="8Sb-h2-Q91"/>
+                        <outlet property="downButton" destination="ovs-GJ-ngg" id="Nup-j7-9C7"/>
+                        <outlet property="learnBttn" destination="zUP-ib-Cbs" id="VzJ-Yw-PV0"/>
+                        <outlet property="limitField" destination="1d8-sJ-eU0" id="w2y-a8-yWs"/>
+                        <outlet property="timoText" destination="oA4-W5-kSU" id="XLH-Da-Oc2"/>
+                        <outlet property="upButton" destination="UbU-Kv-O0V" id="BbI-1t-xcR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="324.375" y="20.070422535211268"/>
         </scene>
     </scenes>
 </document>
